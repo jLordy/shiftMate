@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane hbarPolicy="NEVER" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shiftmate.Controllers.Employee.EmployeeFormController">
+   <content>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="640.0" style="-fx-background-radius: 16;" styleClass="color-dark-blue" stylesheets="@../styles/styles.css">
+         <children>
+            <TextField fx:id="fieldName" prefHeight="82.0" prefWidth="608.0" promptText="Name" stylesheets="@../styles/styles.css">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="radius-button" />
+                  <String fx:value="color-blue" />
+                  <String fx:value="text-field-dark" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets left="16.0" right="16.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="16.0" right="16.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <VBox fx:id="mainContainer" alignment="CENTER" prefHeight="183.0" prefWidth="576.0" spacing="24.0" stylesheets="@../styles/styles.css">
+               <styleClass>
+                  <String fx:value="color-blue" />
+                  <String fx:value="radius-button" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+            </VBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="73.0" prefWidth="507.0" spacing="12.0">
+               <children>
+                  <Button fx:id="btnAddSubject" mnemonicParsing="false" prefHeight="58.0" prefWidth="199.0" stylesheets="@../styles/styles.css" text="Add Subject">
+                     <styleClass>
+                        <String fx:value="color-yellow" />
+                        <String fx:value="text-button-small" />
+                        <String fx:value="text-bold" />
+                        <String fx:value="radius-button" />
+                     </styleClass>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnAddEmployee" layoutX="419.0" layoutY="18.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="199.0" stylesheets="@../styles/styles.css" text="Add Employee">
+                     <styleClass>
+                        <String fx:value="color-yellow" />
+                        <String fx:value="text-button-small" />
+                        <String fx:value="text-bold" />
+                        <String fx:value="radius-button" />
+                     </styleClass>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="16.0" right="16.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="16.0" left="16.0" right="18.0" top="16.0" />
+         </padding>
+      </VBox>
+   </content>
+</ScrollPane>

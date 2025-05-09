@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox fx:id="subjectCard" alignment="TOP_CENTER" prefHeight="101.0" prefWidth="254.0" spacing="4.0" stylesheets="@../styles/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shiftmate.Controllers.Employee.SubjectCardController">
+   <children>
+      <VBox alignment="CENTER_LEFT" prefHeight="115.0" prefWidth="200.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefWidth="200.0" spacing="4.0">
+               <children>
+                  <Label styleClass="text-bold" stylesheets="@../styles/styles.css" text="Course:" />
+                  <Label fx:id="empSubjectName" stylesheets="@../styles/styles.css" text="OOP">
+                     <styleClass>
+                        <String fx:value="text-body" />
+                        <String fx:value="text-bold" />
+                     </styleClass></Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="4.0">
+               <children>
+                  <Label styleClass="text-bold" stylesheets="@../styles/styles.css" text="Course Type:" />
+                  <Label fx:id="empCourseType" styleClass="text-bold" text="Major (5 hrs)" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="4.0">
+               <children>
+                  <Label styleClass="text-bold" stylesheets="@../styles/styles.css" text="No. of sections handle:" />
+                  <Label fx:id="empSectionsHandle" stylesheets="@../styles/styles.css" text="6">
+                     <styleClass>
+                        <String fx:value="text-body" />
+                        <String fx:value="text-bold" />
+                     </styleClass></Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="16.0" top="16.0" />
+   </padding>
+   <styleClass>
+      <String fx:value="color-white" />
+      <String fx:value="radius-button" />
+   </styleClass>
+</HBox>

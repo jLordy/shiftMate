@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="200.0" minWidth="-Infinity" prefWidth="300.0" spacing="4.0" style="-fx-background-radius: 16;" styleClass="color-dark-blue" stylesheets="@../styles/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shiftmate.Controllers.Program.ProgramCardController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefWidth="200.0">
+         <children>
+            <Label fx:id="labelProgramName" prefWidth="186.0" stylesheets="@../styles/styles.css" text="Cagalitan, Joemarie E." wrapText="true">
+               <styleClass>
+                  <String fx:value="text-bold" />
+                  <String fx:value="text-card" />
+               </styleClass>
+            </Label>
+            <Pane prefHeight="30.0" prefWidth="63.0" HBox.hgrow="ALWAYS" />
+            <ImageView fx:id="btnRemove" fitHeight="19.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/deleteBtn.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </HBox>
+      <VBox prefHeight="133.0" prefWidth="268.0" stylesheets="@../styles/styles.css">
+         <styleClass>
+            <String fx:value="color-white" />
+            <String fx:value="radius-button" />
+         </styleClass>
+         <children>
+            <HBox layoutX="26.0" layoutY="26.0" spacing="4.0">
+               <children>
+                  <Label prefHeight="18.0" stylesheets="@../styles/styles.css" text="Program Initials:">
+                     <styleClass>
+                        <String fx:value="text-bold" />
+                        <String fx:value="text-body" />
+                     </styleClass>
+                  </Label>
+                  <Label fx:id="labelInitials" layoutX="10.0" layoutY="10.0" prefHeight="18.0" stylesheets="@../styles/styles.css" text="BSCS">
+                     <styleClass>
+                        <String fx:value="text-bold" />
+                        <String fx:value="text-body" />
+                     </styleClass>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox spacing="4.0">
+               <children>
+                  <Label prefHeight="18.0" stylesheets="@../styles/styles.css" text="Year Level: ">
+                     <styleClass>
+                        <String fx:value="text-bold" />
+                        <String fx:value="text-body" />
+                     </styleClass>
+                  </Label>
+                  <Label fx:id="labelYear" layoutX="10.0" layoutY="10.0" prefHeight="18.0" stylesheets="@../styles/styles.css" text="2">
+                     <styleClass>
+                        <String fx:value="text-bold" />
+                        <String fx:value="text-body" />
+                     </styleClass>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="26.0" layoutY="46.0" spacing="4.0">
+               <children>
+                  <Label prefHeight="18.0" stylesheets="@../styles/styles.css" text="No. of sections:">
+                     <styleClass>
+                        <String fx:value="text-bold" />
+                        <String fx:value="text-body" />
+                     </styleClass>
+                  </Label>
+                  <Label fx:id="labelSections" layoutX="10.0" layoutY="10.0" prefHeight="18.0" stylesheets="@../styles/styles.css" text="6">
+                     <styleClass>
+                        <String fx:value="text-bold" />
+                        <String fx:value="text-body" />
+                     </styleClass>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label prefHeight="18.0" stylesheets="@../styles/styles.css" text="Subjects Required: ">
+                     <styleClass>
+                        <String fx:value="text-bold" />
+                        <String fx:value="text-body" />
+                     </styleClass>
+                  </Label>
+                  <Label fx:id="labelSubjectsNum" layoutX="10.0" layoutY="10.0" prefHeight="18.0" stylesheets="@../styles/styles.css" text="5">
+                     <styleClass>
+                        <String fx:value="text-bold" />
+                        <String fx:value="text-body" />
+                     </styleClass>
+                  </Label>
+               </children>
+            </HBox>
+            <VBox fx:id="subjectContainer" layoutX="26.0" layoutY="86.0">
+               <children>
+                  <Label fx:id="labelSubject" prefWidth="236.0" stylesheets="@../styles/styles.css" text="- OOP" wrapText="true">
+                     <styleClass>
+                        <String fx:value="text-bold" />
+                        <String fx:value="text-body" />
+                     </styleClass>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+         </padding></VBox>
+   </children>
+   <padding>
+      <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+   </padding>
+</VBox>

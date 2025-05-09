@@ -1,0 +1,161 @@
+.radius-button{
+    -fx-background-radius: 24px;
+}
+.color-dark-blue{
+    -fx-background-color: #213448;
+}
+.color-blue{
+    -fx-background-color: #547792;
+}
+.color-light-blue{
+    -fx-background-color: #94B4C1;
+}
+.color-white{
+    -fx-background-color: #F5F5F5;
+}
+
+.color-yellow{
+    -fx-background-color: #ECEFCA;
+}
+.color-light-yellow{
+    -fx-background-color: #f3f5dc;
+}
+.text-button {
+    -fx-font-size: 40px;
+    -fx-font-family: "League Spartan";
+    -fx-text-fill: #FFFFFF;
+}
+
+.text-button-small {
+    -fx-font-size: 18px;
+    -fx-font-family: "League Spartan";
+    -fx-text-fill: #213448;
+}
+.text-bold{
+    -fx-font-weight: bold;
+}
+.text-header{
+    -fx-font-size: 40px;
+    -fx-font-family: "League Spartan";
+    -fx-text-fill: #213448;
+}
+.text-card{
+    -fx-font-size: 18px;
+    -fx-font-family: "League Spartan";
+    -fx-text-fill: #F5F5F5;
+}
+.text-body{
+    -fx-font-size: 14px;
+    -fx-font-family: "League Spartan";
+    -fx-text-fill: #213448;
+}
+.text-form{
+    -fx-font-size: 18px;
+    -fx-font-family: "League Spartan";
+    -fx-text-fill: #213448;
+}
+.text-field-dark{
+    -fx-font-size: 16px;
+    -fx-font-family: "League Spartan";
+    -fx-text-fill: #F5F5F5;
+    -fx-prompt-text-fill: #F5F5F5;
+    -fx-font-weight: bold;
+    -fx-border-width: 0 0 0 0;
+}
+.text-field-dark:focused{
+    /* Remove the underline completely */
+     -fx-border-width: 0;
+     -fx-border-color: transparent;
+     -fx-effect: null;
+}
+.text-field-light{
+    -fx-font-size: 16px;
+    -fx-font-family: "League Spartan";
+    -fx-text-fill: #213448;
+    -fx-prompt-text-fill: #213448;
+
+}
+.text-field-light:focused{
+/* Remove the underline completely */
+    -fx-border-width: 0;
+    -fx-border-color: transparent;
+    -fx-effect: null;
+}
+
+/* Apply to all buttons */
+.button {
+    -fx-opacity: 1.0;
+}
+
+/* Hover effect */
+.button:hover {
+    -fx-opacity: 0.8;
+    -fx-cursor: hand; /* Optional: Change cursor to hand */
+}
+
+/* Pressed effect (optional) */
+.button:pressed {
+    -fx-opacity: 0.6;
+}
+
+.pane {
+    -fx-background-radius: 16px;
+    -fx-opacity: 0.2;
+    -fx-background-color: #213448;
+}
+
+.pane:hover {
+    -fx-opacity: 0.1;
+}
+
+.radio-button {
+    -fx-font-size: 14px;
+    -fx-text-fill: #213448;
+}
+
+/* This styles the outer circle */
+.radio-button .radio {
+    -fx-background-color: transparent;
+    -fx-border-color: #213448;
+    -fx-border-width: 2;
+    -fx-border-radius: 50%;
+    -fx-background-radius: 50%;
+    -fx-padding: 4;
+}
+
+/* This removes the default blue dot */
+.radio-button:selected .radio > .dot {
+    -fx-shape: "";
+    -fx-background-color: #213448;
+    -fx-background-radius: 50%;
+
+}
+.text-description{
+     -fx-font-size: 32px;
+     -fx-font-family: "League Spartan";
+     -fx-text-fill: #213448;
+}
+.text-row-header{
+     -fx-font-size: 22px;
+     -fx-font-family: "League Spartan";
+     -fx-text-fill: #213448;
+     -fx-prompt-text-fill: #213448;
+}
+.cell-border{
+    -fx-border-width: 3px;
+    -fx-border-color: #213448;
+}
+
+.cell-text{
+    -fx-font-size: 9px;
+}
+
+/* ensure all ImageViews start fully opaque */
+.image-view {
+  -fx-opacity: 1.0;
+}
+
+/* when *any* ImageView is hovered, fade it to 80% */
+.image-view:hover {
+  -fx-opacity: 0.8;
+}

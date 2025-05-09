@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shiftmate.Controllers.Program.ProgramFormController">
+   <content>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="423.0" style="-fx-background-radius: 16;" styleClass="color-dark-blue" stylesheets="@../styles/styles.css">
+         <children>
+            <TextField fx:id="fieldProgramName" minHeight="82.0" prefHeight="82.0" prefWidth="441.0" promptText="Program Name" stylesheets="@../styles/styles.css">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="radius-button" />
+                  <String fx:value="color-blue" />
+                  <String fx:value="text-field-dark" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets left="16.0" right="16.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="16.0" right="16.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <VBox alignment="TOP_CENTER" prefHeight="241.0" prefWidth="455.0" spacing="12.0" stylesheets="@../styles/styles.css">
+               <styleClass>
+                  <String fx:value="color-yellow" />
+                  <String fx:value="radius-button" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+               </padding>
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="47.0" prefWidth="560.0">
+                     <children>
+                        <Label prefHeight="59.0" prefWidth="143.0" stylesheets="@../styles/styles.css" text="Program Initials:">
+                           <styleClass>
+                              <String fx:value="text-bold" />
+                              <String fx:value="text-field-light" />
+                           </styleClass>
+                        </Label>
+                        <TextField fx:id="fieldInitials" prefHeight="35.0" prefWidth="89.0" styleClass="text-field-light" stylesheets="@../styles/styles.css" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="18.0" layoutY="18.0" prefHeight="47.0" prefWidth="560.0">
+                     <children>
+                        <Label prefHeight="35.0" prefWidth="142.0" stylesheets="@../styles/styles.css" text="Year Level:">
+                           <styleClass>
+                              <String fx:value="text-bold" />
+                              <String fx:value="text-field-light" />
+                           </styleClass>
+                        </Label>
+                        <TextField fx:id="fieldYearLevel" prefHeight="35.0" prefWidth="88.0" styleClass="text-field-light" stylesheets="@../styles/styles.css" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="18.0" layoutY="89.0" prefHeight="47.0" prefWidth="560.0">
+                     <children>
+                        <Label prefHeight="59.0" prefWidth="143.0" stylesheets="@../styles/styles.css" text="No. of Sections:">
+                           <styleClass>
+                              <String fx:value="text-bold" />
+                              <String fx:value="text-field-light" />
+                           </styleClass>
+                        </Label>
+                        <TextField fx:id="fieldSections" prefHeight="35.0" prefWidth="88.0" styleClass="text-field-light" stylesheets="@../styles/styles.css" />
+                     </children>
+                  </HBox>
+                  <VBox spacing="4.0">
+                     <children>
+                        <Label prefHeight="59.0" prefWidth="143.0" stylesheets="@../styles/styles.css" text="Subjects Required:">
+                           <styleClass>
+                              <String fx:value="text-bold" />
+                              <String fx:value="text-field-light" />
+                           </styleClass>
+                        </Label>
+                        <VBox fx:id="checkboxContainer">
+                           <children>
+                              <CheckBox fx:id="subjectBox" mnemonicParsing="false" prefHeight="27.0" prefWidth="327.0" stylesheets="@../styles/styles.css" text="CheckBox">
+                                 <styleClass>
+                                    <String fx:value="text-bold" />
+                                    <String fx:value="text-form" />
+                                 </styleClass>
+                              </CheckBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="73.0" prefWidth="507.0" spacing="12.0">
+               <children>
+                  <Button fx:id="btnCancel" layoutX="419.0" layoutY="18.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="199.0" stylesheets="@../styles/styles.css" text="Cancel">
+                     <styleClass>
+                        <String fx:value="text-button-small" />
+                        <String fx:value="color-white" />
+                        <String fx:value="text-bold" />
+                        <String fx:value="radius-button" />
+                     </styleClass>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnAddProgram" layoutX="170.0" layoutY="18.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="199.0" stylesheets="@../styles/styles.css" text="Add Program">
+                     <styleClass>
+                        <String fx:value="color-light-yellow" />
+                        <String fx:value="text-button-small" />
+                        <String fx:value="text-bold" />
+                        <String fx:value="radius-button" />
+                     </styleClass>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="16.0" right="16.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+         </padding>
+      </VBox>
+   </content>
+</ScrollPane>

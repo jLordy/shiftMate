@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane hbarPolicy="NEVER" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shiftmate.Controllers.Main.GeneratePageController">
+   <content>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1920.0" spacing="16.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="16.0">
+               <children>
+                  <Label prefHeight="96.0" prefWidth="232.0" stylesheets="@../styles/styles.css" text="EMPLOYEES">
+                     <styleClass>
+                        <String fx:value="text-bold" />
+                        <String fx:value="text-header" />
+                     </styleClass>
+                  </Label>
+                  <Pane prefHeight="100.0" prefWidth="217.0" HBox.hgrow="ALWAYS" />
+                  <Label alignment="CENTER" layoutX="10.0" layoutY="12.0" prefHeight="96.0" prefWidth="362.0" stylesheets="@../styles/styles.css" text="WORKING HOURS:">
+                     <styleClass>
+                        <String fx:value="text-bold" />
+                        <String fx:value="text-header" />
+                     </styleClass>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="1531.0" layoutY="12.0" prefHeight="96.0" prefWidth="161.0" stylesheets="@../styles/styles.css" text="7:00 AM">
+                     <styleClass>
+                        <String fx:value="text-bold" />
+                        <String fx:value="text-header" />
+                     </styleClass>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="1792.0" layoutY="12.0" prefHeight="96.0" prefWidth="90.0" stylesheets="@../styles/styles.css" text="TO" textAlignment="CENTER">
+                     <styleClass>
+                        <String fx:value="text-bold" />
+                        <String fx:value="text-header" />
+                     </styleClass>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="1792.0" layoutY="12.0" prefHeight="96.0" prefWidth="161.0" stylesheets="@../styles/styles.css" text="8:00 PM">
+                     <styleClass>
+                        <String fx:value="text-bold" />
+                        <String fx:value="text-header" />
+                     </styleClass>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="16.0" right="16.0" />
+               </padding>
+            </HBox>
+            <VBox fx:id="mainContainer" spacing="16.0">
+               <children>
+                  <HBox fx:id="employeeContainer" prefWidth="1888.0" spacing="16.0">
+                     <children>
+                        <Pane fx:id="btnAddEmployee" maxHeight="200.0" prefHeight="200.0" prefWidth="300.0" styleClass="pane" stylesheets="@../styles/styles.css">
+                           <children>
+                              <Pane layoutX="45.0" layoutY="25.0" prefHeight="150.0" prefWidth="210.0" style="-fx-background-color: #94B4C1; -fx-opacity: 0.7; -fx-background-radius: 16;">
+                                 <children>
+                                    <ImageView fitHeight="94.0" fitWidth="87.0" layoutX="62.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/addEmployeeBtn.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </children>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Pane>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER_RIGHT" stylesheets="@../styles/styles.css">
+               <children>
+                  <ImageView fx:id="btnGenerate" fitHeight="63.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/nextBtn.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+         </padding>
+      </VBox>
+   </content>
+</ScrollPane>

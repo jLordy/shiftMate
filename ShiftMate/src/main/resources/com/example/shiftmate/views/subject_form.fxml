@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="subjectContainer" prefHeight="171.0" prefWidth="576.0" spacing="4.0" stylesheets="@../styles/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="21.0" prefWidth="550.0">
+         <children>
+            <Label prefHeight="34.0" prefWidth="130.0" stylesheets="@../styles/styles.css" text="Course Name:">
+               <styleClass>
+                  <String fx:value="text-form" />
+                  <String fx:value="text-bold" />
+               </styleClass>
+            </Label>
+            <TextField fx:id="fieldSubjectName" prefHeight="35.0" prefWidth="256.0" styleClass="text-field-light" stylesheets="@../styles/styles.css" />
+            <Pane prefHeight="41.0" prefWidth="96.0" HBox.hgrow="ALWAYS" />
+            <ImageView fx:id="btnRemoveSubject" fitHeight="52.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/minusBtn.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets bottom="4.0" left="16.0" right="16.0" top="16.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="589.0" spacing="8.0">
+         <children>
+            <Pane prefHeight="27.0" prefWidth="35.0" />
+            <Label prefHeight="27.0" prefWidth="116.0" stylesheets="@../styles/styles.css" text="Course Type:">
+               <styleClass>
+                  <String fx:value="text-form" />
+                  <String fx:value="text-bold" />
+               </styleClass>
+            </Label>
+            <RadioButton fx:id="radioMajor" mnemonicParsing="false" selected="true" stylesheets="@../styles/styles.css" text="Major">
+               <toggleGroup>
+                  <ToggleGroup fx:id="groupCourseType" />
+               </toggleGroup>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </RadioButton>
+            <RadioButton fx:id="radioMinor" mnemonicParsing="false" stylesheets="@../styles/styles.css" text="Minor" textFill="#c36e6e" toggleGroup="$groupCourseType">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </RadioButton>
+         </children>
+         <padding>
+            <Insets bottom="4.0" left="16.0" right="16.0" top="4.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="589.0">
+         <children>
+            <Pane prefHeight="54.0" prefWidth="45.0" />
+            <Label prefHeight="35.0" prefWidth="177.0" stylesheets="@../styles/styles.css" text="No. of sections:">
+               <styleClass>
+                  <String fx:value="text-form" />
+                  <String fx:value="text-bold" />
+               </styleClass>
+            </Label>
+            <TextField fx:id="fieldSectionsHandle" prefHeight="27.0" prefWidth="47.0" style="-fx-background-radius: 5;" styleClass="color-white" stylesheets="@../styles/styles.css" />
+         </children>
+         <padding>
+            <Insets bottom="4.0" left="16.0" right="16.0" top="4.0" />
+         </padding>
+      </HBox>
+   </children>
+   <styleClass>
+      <String fx:value="color-yellow" />
+      <String fx:value="radius-button" />
+   </styleClass>
+   <padding>
+      <Insets bottom="8.0" />
+   </padding>
+</VBox>

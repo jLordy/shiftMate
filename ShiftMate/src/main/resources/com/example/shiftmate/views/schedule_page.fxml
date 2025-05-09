@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shiftmate.Controllers.Schedule.SchedulePageController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="16.0">
+         <children>
+            <Label prefHeight="58.0" prefWidth="122.0" stylesheets="@../styles/styles.css" text="SHIFT">
+               <styleClass>
+                  <String fx:value="text-bold" />
+                  <String fx:value="text-header" />
+               </styleClass>
+            </Label>
+            <Pane prefHeight="100.0" prefWidth="217.0" HBox.hgrow="ALWAYS" />
+            <Label alignment="CENTER" prefHeight="96.0" prefWidth="225.0" stylesheets="@../styles/styles.css" text="EMPLOYEE:" textAlignment="CENTER">
+               <styleClass>
+                  <String fx:value="text-bold" />
+                  <String fx:value="text-header" />
+               </styleClass>
+            </Label>
+            <ComboBox fx:id="comboEmployee" prefHeight="40.0" prefWidth="265.0" promptText="Employee Name" stylesheets="@../styles/styles.css">
+               <styleClass>
+                  <String fx:value="text-card" />
+                  <String fx:value="radius-button" />
+               </styleClass>
+            </ComboBox>
+         </children>
+         <padding>
+            <Insets left="16.0" right="16.0" />
+         </padding>
+      </HBox>
+      <ScrollPane hbarPolicy="NEVER" prefHeight="1080.0" prefWidth="1920.0" VBox.vgrow="ALWAYS">
+         <content>
+            <HBox alignment="CENTER" prefWidth="1911.0" styleClass="radius-button" stylesheets="@../styles/styles.css">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefWidth="146.0" stylesheets="@../styles/styles.css" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Pane minHeight="75.0" prefHeight="75.0" prefWidth="146.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                           <children>
+                              <Label layoutX="47.0" layoutY="6.0" prefHeight="63.0" stylesheets="@../styles/styles.css" text="TIME">
+                                 <styleClass>
+                                    <String fx:value="text-bold" />
+                                    <String fx:value="text-row-header" />
+                                 </styleClass>
+                              </Label>
+                           </children></Pane>
+                        <HBox alignment="CENTER" prefHeight="50.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                           <children>
+                              <Label prefHeight="63.0" stylesheets="@../styles/styles.css" text="7:00 - 7:30">
+                                 <styleClass>
+                                    <String fx:value="text-bold" />
+                                    <String fx:value="text-row-header" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="105.0" prefHeight="50.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                           <children>
+                              <Label prefHeight="63.0" stylesheets="@../styles/styles.css" text="7:30 - 8:00">
+                                 <styleClass>
+                                    <String fx:value="text-bold" />
+                                    <String fx:value="text-row-header" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="168.0" prefHeight="50.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                           <children>
+                              <Label prefHeight="63.0" stylesheets="@../styles/styles.css" text="8:00 - 8:30">
+                                 <styleClass>
+                                    <String fx:value="text-bold" />
+                                    <String fx:value="text-row-header" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="231.0" prefHeight="50.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                           <children>
+                              <Label prefHeight="63.0" stylesheets="@../styles/styles.css" text="8:30 - 9:00">
+                                 <styleClass>
+                                    <String fx:value="text-bold" />
+                                    <String fx:value="text-row-header" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="294.0" prefHeight="50.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                           <children>
+                              <Label prefHeight="63.0" stylesheets="@../styles/styles.css" text="9:00 - 9:30">
+                                 <styleClass>
+                                    <String fx:value="text-bold" />
+                                    <String fx:value="text-row-header" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="357.0" prefHeight="50.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                           <children>
+                              <Label prefHeight="63.0" stylesheets="@../styles/styles.css" text="9:30 - 10:00">
+                                 <styleClass>
+                                    <String fx:value="text-bold" />
+                                    <String fx:value="text-row-header" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="420.0" prefHeight="50.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                           <children>
+                              <Label prefHeight="63.0" stylesheets="@../styles/styles.css" text="10:00 - 10:30">
+                                 <styleClass>
+                                    <String fx:value="text-bold" />
+                                    <String fx:value="text-row-header" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="385.0" prefHeight="50.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                           <children>
+                              <Label prefHeight="63.0" stylesheets="@../styles/styles.css" text="10:30 - 11:00">
+                                 <styleClass>
+                                    <String fx:value="text-bold" />
+                                    <String fx:value="text-row-header" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="483.0" prefHeight="50.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                           <children>
+                              <Label prefHeight="63.0" stylesheets="@../styles/styles.css" text="11:00 - 11:30">
+                                 <styleClass>
+                                    <String fx:value="text-bold" />
+                                    <String fx:value="text-row-header" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="535.0" prefHeight="50.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                           <children>
+                              <Label prefHeight="63.0" stylesheets="@../styles/styles.css" text="11:30 - 12:00">
+                                 <styleClass>
+                                    <String fx:value="text-bold" />
+                                    <String fx:value="text-row-header" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="546.0" prefHeight="50.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                           <children>
+                              <Label prefHeight="63.0" stylesheets="@../styles/styles.css" text="12:00 - 12:30">
+                                 <styleClass>
+                                    <String fx:value="text-bold" />
+                                    <String fx:value="text-row-header" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="635.0" prefHeight="50.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                           <children>
+                              <Label prefHeight="63.0" stylesheets="@../styles/styles.css" text="12:30 - 1:00">
+                                 <styleClass>
+                                    <String fx:value="text-bold" />
+                                    <String fx:value="text-row-header" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="609.0" prefHeight="50.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                           <children>
+                              <Label prefHeight="63.0" stylesheets="@../styles/styles.css" text="1:00 - 1:30">
+                                 <styleClass>
+                                    <String fx:value="text-bold" />
+                                    <String fx:value="text-row-header" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="672.0" prefHeight="50.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                           <children>
+                              <Label prefHeight="63.0" stylesheets="@../styles/styles.css" text="1:30 - 2:00">
+                                 <styleClass>
+                                    <String fx:value="text-bold" />
+                                    <String fx:value="text-row-header" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="735.0" prefHeight="50.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                           <children>
+                              <Label prefHeight="63.0" stylesheets="@../styles/styles.css" text="2:00 - 2:30">
+                                 <styleClass>
+                                    <String fx:value="text-bold" />
+                                    <String fx:value="text-row-header" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="798.0" prefHeight="50.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                           <children>
+                              <Label prefHeight="63.0" stylesheets="@../styles/styles.css" text="2:30 - 3:00">
+                                 <styleClass>
+                                    <String fx:value="text-bold" />
+                                    <String fx:value="text-row-header" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="1283.0" prefHeight="50.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                           <children>
+                              <Label prefHeight="63.0" stylesheets="@../styles/styles.css" text="3:00 - 3:30">
+                                 <styleClass>
+                                    <String fx:value="text-bold" />
+                                    <String fx:value="text-row-header" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="1283.0" prefHeight="50.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                           <children>
+                              <Label prefHeight="63.0" stylesheets="@../styles/styles.css" text="3:30 - 4:00">
+                                 <styleClass>
+                                    <String fx:value="text-bold" />
+                                    <String fx:value="text-row-header" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="1483.0" prefHeight="50.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                           <children>
+                              <Label prefHeight="63.0" stylesheets="@../styles/styles.css" text="4:00 - 4:30">
+                                 <styleClass>
+                                    <String fx:value="text-bold" />
+                                    <String fx:value="text-row-header" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="1583.0" prefHeight="50.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                           <children>
+                              <Label prefHeight="63.0" stylesheets="@../styles/styles.css" text="4:30 - 5:00">
+                                 <styleClass>
+                                    <String fx:value="text-bold" />
+                                    <String fx:value="text-row-header" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="883.0" prefHeight="50.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                           <children>
+                              <Label prefHeight="63.0" stylesheets="@../styles/styles.css" text="5:00 - 5:30">
+                                 <styleClass>
+                                    <String fx:value="text-bold" />
+                                    <String fx:value="text-row-header" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="933.0" prefHeight="50.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                           <children>
+                              <Label prefHeight="63.0" stylesheets="@../styles/styles.css" text="5:30 - 6:00">
+                                 <styleClass>
+                                    <String fx:value="text-bold" />
+                                    <String fx:value="text-row-header" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="983.0" prefHeight="50.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                           <children>
+                              <Label prefHeight="63.0" stylesheets="@../styles/styles.css" text="6:00 - 6:30">
+                                 <styleClass>
+                                    <String fx:value="text-bold" />
+                                    <String fx:value="text-row-header" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="1033.0" prefHeight="50.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                           <children>
+                              <Label prefHeight="63.0" stylesheets="@../styles/styles.css" text="6:30 - 7:00">
+                                 <styleClass>
+                                    <String fx:value="text-bold" />
+                                    <String fx:value="text-row-header" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="1083.0" prefHeight="50.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                           <children>
+                              <Label prefHeight="63.0" stylesheets="@../styles/styles.css" text="7:00 - 7:30">
+                                 <styleClass>
+                                    <String fx:value="text-bold" />
+                                    <String fx:value="text-row-header" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="1133.0" prefHeight="50.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                           <children>
+                              <Label prefHeight="63.0" stylesheets="@../styles/styles.css" text="7:30 - 8:00">
+                                 <styleClass>
+                                    <String fx:value="text-bold" />
+                                    <String fx:value="text-row-header" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <HBox alignment="TOP_CENTER" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox alignment="TOP_CENTER" maxHeight="1375.0" minHeight="1375.0" prefHeight="1375.0" prefWidth="343.0" stylesheets="@../styles/styles.css" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Pane minHeight="75.0" prefHeight="75.0" prefWidth="200.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                                 <children>
+                                    <Label layoutX="129.0" layoutY="6.0" prefHeight="63.0" stylesheets="@../styles/styles.css" text="Monday">
+                                       <styleClass>
+                                          <String fx:value="text-bold" />
+                                          <String fx:value="text-row-header" />
+                                       </styleClass>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <VBox fx:id="monContainer" alignment="TOP_CENTER" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" minHeight="1375.0" prefHeight="1375.0" prefWidth="343.0" stylesheets="@../styles/styles.css" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Pane minHeight="75.0" prefHeight="75.0" prefWidth="200.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                                 <children>
+                                    <Label layoutX="129.0" layoutY="6.0" prefHeight="63.0" stylesheets="@../styles/styles.css" text="Tuesday">
+                                       <styleClass>
+                                          <String fx:value="text-bold" />
+                                          <String fx:value="text-row-header" />
+                                       </styleClass>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <VBox fx:id="tueContainer" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" minHeight="1375.0" prefHeight="1375.0" prefWidth="343.0" stylesheets="@../styles/styles.css" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Pane minHeight="75.0" prefHeight="75.0" prefWidth="200.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                                 <children>
+                                    <Label layoutX="112.0" layoutY="6.0" prefHeight="63.0" stylesheets="@../styles/styles.css" text="Wednesday">
+                                       <styleClass>
+                                          <String fx:value="text-bold" />
+                                          <String fx:value="text-row-header" />
+                                       </styleClass>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <VBox fx:id="wedContainer" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" minHeight="1375.0" prefHeight="1375.0" prefWidth="343.0" stylesheets="@../styles/styles.css" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Pane minHeight="75.0" prefHeight="75.0" prefWidth="200.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                                 <children>
+                                    <Label layoutX="124.0" layoutY="6.0" prefHeight="63.0" stylesheets="@../styles/styles.css" text="Thursday">
+                                       <styleClass>
+                                          <String fx:value="text-bold" />
+                                          <String fx:value="text-row-header" />
+                                       </styleClass>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <VBox fx:id="thuContainer" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" minHeight="1375.0" prefHeight="1375.0" prefWidth="343.0" stylesheets="@../styles/styles.css" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Pane minHeight="75.0" prefHeight="75.0" prefWidth="200.0" styleClass="cell-border" stylesheets="@../styles/styles.css">
+                                 <children>
+                                    <Label layoutX="140.0" layoutY="6.0" prefHeight="63.0" stylesheets="@../styles/styles.css" text="Friday">
+                                       <styleClass>
+                                          <String fx:value="text-bold" />
+                                          <String fx:value="text-row-header" />
+                                       </styleClass>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <VBox fx:id="friContainer" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+            </HBox>
+         </content>
+      </ScrollPane>
+      <HBox alignment="CENTER_RIGHT">
+         <padding>
+            <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+         </padding>
+         <children>
+            <ImageView fx:id="btnExport" fitHeight="78.0" fitWidth="217.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/exportBtn.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</VBox>
